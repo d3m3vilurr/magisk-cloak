@@ -1,7 +1,7 @@
-id=template
-name=Template Module
+id=magiskcloak
+name=Magisk Cloak
 version=v1
 versionCode=1
-author=topjohnwu
-description=A short description
+author=d3m3vilurr
+description=Remove magisk mounts, it can make disaster on module compatibility
 template=3

@@ -5,3 +5,8 @@ MODDIR=${0%/*}
 
 # This script will be executed in late_start service mode
 # More info in the main Magisk thread
+
+# drop mirror link
+umount /dev/magisk/mirror/system
+# block access user thread
+chcon u:object_r:device:s0 /dev/magisk/mirror/system
