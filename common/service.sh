@@ -10,3 +10,13 @@ MODDIR=${0%/*}
 umount /dev/magisk/mirror/system
 # block access user thread
 chcon u:object_r:device:s0 /dev/magisk/mirror/system
+
+mount -o remount,rw -t rootfs /
+# remove read perm
+if [ -f /sbin/magisk ]; then
+    chmod 751 /sbin/magisk
+fi
+if [ -f /sbin_orig/magisk ]; then
+    chmod 751 /sbin_orig/magisk
+fi
+mount -o remount,ro -t rootfs /

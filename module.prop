@@ -1,7 +1,7 @@
 id=magiskcloak
 name=Magisk Cloak
 version=v2
-versionCode=2
+versionCode=3
 author=d3m3vilurr
 description=Remove magisk mounts, it can make disaster on module compatibility
 template=4
